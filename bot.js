@@ -28,7 +28,6 @@ client.on('message', message => {
     if (message.author.bot) return;
 
     const baseball = client.channels.get(channel_id);//対象チャンネルのIDを登録
-    //console.log(baseball);
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
